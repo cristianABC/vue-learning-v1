@@ -2,7 +2,9 @@
   <v-toolbar fixed dark class="cyan">
     <v-toolbar-side-icon></v-toolbar-side-icon>
     <v-toolbar-title class="white--text">
-        <span @click="navigateTo({name: 'root'})" >TabTracker </span>    
+        <router-link to="root">
+            <span>TabTracker </span>    
+        </router-link>
     </v-toolbar-title>
     <v-toolbar-items>
         <v-btn flat dark>
@@ -14,6 +16,11 @@
         <router-link to="register">
           <v-btn  flat dark>         
                Sign Up
+          </v-btn>
+        </router-link> 
+        <router-link to="login">
+          <v-btn  flat dark>         
+              Login
           </v-btn>
         </router-link> 
     </v-toolbar-items>
